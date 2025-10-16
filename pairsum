@@ -1,0 +1,11 @@
+#will improve
+
+def haspairwithSum(arr,sume):
+    for i in range(len(arr)):
+        for j in range(i+1,len(arr)):
+            if arr[i] + arr[j] == sume:
+                print(arr[i] + arr[j])
+                return True
+                break
+            print(arr[i] + arr[j])
+                
