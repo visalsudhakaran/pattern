@@ -1,0 +1,14 @@
+class Computer:
+    
+    def __init__(self):
+        self.name = "Ameer"
+        self.age = 622
+
+com1 = Computer()
+com2 = Computer()
+com2.age = 734
+com1.name = 'Rajesh'
+print(com2.name)
+print(com1.name)
+print(com1.age)
+print(com2.age)
