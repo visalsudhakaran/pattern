@@ -1,0 +1,19 @@
+class Car:
+    wheel = 4 #Class variable so it wont change based on object
+    def __init__(self,gear,engine): #Init is a instantanious variable, will change based on object
+        self.gear = gear
+        self.engine = engine
+    
+    def show(self):
+        print(self.gear, self.engine, Car.wheel)
+        
+        
+
+c1 = Car(4,"2L")
+c2 = Car(7,"8L")
+
+c1.show()
+c2.show()
+
+
+        
