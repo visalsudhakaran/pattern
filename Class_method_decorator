@@ -1,0 +1,25 @@
+class Students:
+    
+    school = "Bharath Vidya Mandir"
+    
+    def __init__(self, m1,m2,m3):
+        self.m1 = m1
+        self.m2 = m2
+        self.m3 = m3
+        
+    def set_m1(self,value):
+        self.m1 = value
+    
+    def avg(self):
+        return (self.m1 + self.m2 + self.m3)/3
+    
+    @classmethod #decorator is required other wise (cls) as arg
+    def info(cls):
+        return cls.school
+    
+s1 = Students(34,56,78)
+s2 = Students(56,89,12)
+
+print(Students.info())
+print(s2.avg(),Students.school)
+
